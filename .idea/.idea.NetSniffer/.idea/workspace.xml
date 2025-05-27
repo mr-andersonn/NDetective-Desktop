@@ -7,10 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59389d4d-3855-4cc7-bc39-35e73ae0de4a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/NetworkInfoProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/NetworkInfoProvider.cs" afterDir="false" />
-    </list>
+    <list default="true" id="59389d4d-3855-4cc7-bc39-35e73ae0de4a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -103,7 +100,7 @@
       <workItem from="1748305257884" duration="2596000" />
       <workItem from="1748342982274" duration="54000" />
       <workItem from="1748353962155" duration="10484000" />
-      <workItem from="1748372789964" duration="5883000" />
+      <workItem from="1748372789964" duration="6543000" />
     </task>
     <servers />
   </component>
