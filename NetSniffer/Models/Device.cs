@@ -14,12 +14,14 @@ public class Device : IComparable
         this.mac = mac;
         this.description = description;
     }
-    public string toString()
+    override public string ToString()
     {
         return $"if: {ip}, mac: {mac}, description: {description}";
     }
     public int CompareTo(object? obj) 
     {
         throw new NotImplementedException(); 
+        
+        // TODO: implement
     }
 }

@@ -8,8 +8,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59389d4d-3855-4cc7-bc39-35e73ae0de4a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/ScanResultTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/ScanResultTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/ArpScannerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/ArpScannerTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/ref/NetSniffer.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/ref/NetSniffer.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/refint/NetSniffer.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/refint/NetSniffer.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/Device.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/Device.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/SavedScans.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/SavedScans.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/Scanners/ArpScanner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/Scanners/ArpScanner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/Scanners/NmapScanner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/Scanners/NmapScanner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +118,7 @@
       <workItem from="1748212883814" duration="122000" />
       <workItem from="1748305257884" duration="2596000" />
       <workItem from="1748342982274" duration="54000" />
-      <workItem from="1748353962155" duration="4503000" />
+      <workItem from="1748353962155" duration="4853000" />
     </task>
     <servers />
   </component>

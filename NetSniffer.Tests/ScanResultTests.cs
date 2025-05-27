@@ -13,14 +13,14 @@ public class ScanResultTests
         Assert.Empty(scanResult.Devices);
 
         // Act
-        scanResult.addDevice(new Device("192.168.0.104", "94:bb:43:e9:c5:ca", "Device 1"));
+        scanResult.AddDevice(new Device("192.168.0.104", "94:bb:43:e9:c5:ca", "Device 1"));
 
         // Assert result
         Assert.Equal(1, scanResult.Devices.Count);
 
         // Act 2
-        scanResult.addDevice(new Device("192.168.0.104", "94:bb:43:e9:c5:ca", "Device 1"));
-        scanResult.addDevice(new Device("192.168.0.104", "94:bb:43:e9:c5:ca", "Device 2"));
+        scanResult.AddDevice(new Device("192.168.0.104", "94:bb:43:e9:c5:ca", "Device 1"));
+        scanResult.AddDevice(new Device("192.168.0.104", "94:bb:43:e9:c5:ca", "Device 2"));
 
         // Assert result
         Assert.Equal(3, scanResult.Devices.Count);

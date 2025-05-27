@@ -15,7 +15,7 @@ public class ScanResult
         this.Devices = devices;
         this.Time = DateTime.Now;
     }
-    public void addDevice(Device device)
+    public void AddDevice(Device device)
     {
        Devices.Add(device);
     }
