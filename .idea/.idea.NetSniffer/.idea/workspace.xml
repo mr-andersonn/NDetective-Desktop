@@ -9,13 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="59389d4d-3855-4cc7-bc39-35e73ae0de4a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/ArpScannerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/ScannersTests/ArpScannerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/NmapScannerTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/ScannersTests/NmapScannerTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/NetworkInfoProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/NetworkInfoProvider.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +103,7 @@
       <workItem from="1748305257884" duration="2596000" />
       <workItem from="1748342982274" duration="54000" />
       <workItem from="1748353962155" duration="10484000" />
-      <workItem from="1748372789964" duration="4109000" />
+      <workItem from="1748372789964" duration="5883000" />
     </task>
     <servers />
   </component>

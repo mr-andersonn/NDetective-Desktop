@@ -6,6 +6,8 @@ using System.Net.Sockets;
 
 namespace NetSniffer.Models.NetworkManagers;
 
+public record struct IpRange(IPAddress Start, IPAddress End);
+
 /*
  * Responsibilities
  *
@@ -19,7 +21,6 @@ public class NetworkInfoProvider
 {
     public readonly IPAddress Ip;
     public readonly IPAddress SubnetMask;
-    public record struct IpRange(IPAddress Start, IPAddress End);
     public readonly IpRange SubnetRange;
     
     private readonly UnicastIPAddressInformation _unicast;
@@ -46,9 +47,30 @@ public class NetworkInfoProvider
 
     private IpRange CalculateSubnetRange()
     {
+        uint ip = IpToUInt32(Ip);
+        uint mask = IpToUInt32(SubnetMask);
         
+        uint network = ip & mask;
+        uint broadcast = network | ~mask;
+
+        IPAddress startIp = UInt32ToIp(network + 1);
+        IPAddress endIp = UInt32ToIp(broadcast - 1);
         
-        return null;
+        return new IpRange(startIp, endIp);
+    }
+
+    private uint IpToUInt32(IPAddress ip)
+    {
+        byte[] bytes = ip.GetAddressBytes();
+        if (BitConverter.IsLittleEndian) Array.Reverse(bytes);
+        return BitConverter.ToUInt32(bytes, 0);
+    }
+
+    private IPAddress UInt32ToIp(uint ip)
+    {
+        byte[] bytes = BitConverter.GetBytes(ip);
+        if (BitConverter.IsLittleEndian) Array.Reverse(bytes);
+        return new IPAddress(bytes);
     }
 
     private UnicastIPAddressInformation? GetUnicast()
