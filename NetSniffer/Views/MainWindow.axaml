@@ -7,14 +7,15 @@
         x:Class="NetSniffer.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="NetSniffer">
+        Title="NetSniffer"
+        Width="800"
+        Height="500">
 
-    <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:MainWindowViewModel/>
-    </Design.DataContext>
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="25">
+        <TextBlock Text="{Binding Description}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="{Binding ButtonContent}" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+    </StackPanel>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    
 
 </Window>

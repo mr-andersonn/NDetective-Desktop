@@ -2,5 +2,6 @@
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-    public string Greeting { get; } = "Welcome to Avalonia!";
+    public string Description { get; } = "ArpScan";
+    public string ButtonContent { get; } = "Start";
 }
