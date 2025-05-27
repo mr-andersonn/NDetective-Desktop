@@ -9,7 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="59389d4d-3855-4cc7-bc39-35e73ae0de4a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NetSniffer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/NetworkManagersTests/NetworkingInfoProviderTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/NetworkManagersTests/NetworkingInfoProviderTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/NetworkManagersTests/PingSweeperTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/NetworkManagersTests/PingSweeperTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.Tests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/bin/Debug/net9.0/NetSniffer.dll" afterDir="false" />
@@ -22,6 +22,12 @@
       <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/NetSniffer.Tests.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/ref/NetSniffer.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/ref/NetSniffer.Tests.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/refint/NetSniffer.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.Tests/obj/Debug/net9.0/refint/NetSniffer.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/Interfaces/IScanner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/Interfaces/IScanner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/NetworkInfoProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/NetworkInfoProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/PingSweeper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/NetworkManagers/PingSweeper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/Scanners/ArpScanner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/Scanners/ArpScanner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetSniffer/Models/Scanners/NmapScanner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/Models/Scanners/NmapScanner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/bin/Debug/net9.0/NetSniffer.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/NetSniffer/obj/Debug/net9.0/NetSniffer.AssemblyInfo.cs" afterDir="false" />
@@ -57,6 +63,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3487b1d537f14cec9b3ac0b48215f301e26400/a4/31fc6ddb/Object.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d9677277995708e62f4fdd895f179695db5953fef873388ebb137d2af2ec8e8/Record.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f745171ac1d9709943357d18d6d284cbcde3d621ec6b1caff5ece86394b7d9a9/CompiledBindingExtension.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -125,7 +132,8 @@
       <workItem from="1748305257884" duration="2596000" />
       <workItem from="1748342982274" duration="54000" />
       <workItem from="1748353962155" duration="10484000" />
-      <workItem from="1748372789964" duration="7257000" />
+      <workItem from="1748372789964" duration="7400000" />
+      <workItem from="1748386189470" duration="3481000" />
     </task>
     <servers />
   </component>

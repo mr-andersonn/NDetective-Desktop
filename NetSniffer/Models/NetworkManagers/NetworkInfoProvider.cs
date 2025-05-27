@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.NetworkInformation;
@@ -33,6 +34,15 @@ public class NetworkInfoProvider
         SubnetMask = GetSubnetMask();
         
         SubnetRange = CalculateSubnetRange();
+    }
+
+    public IEnumerable<IPAddress> GetAllHostsInRange()
+    {
+        uint start = IpToUInt32(SubnetRange.Start);
+        uint end = IpToUInt32(SubnetRange.End);
+
+        for (uint i = start; i < end; i++)
+            yield return UInt32ToIp(i);
     }
 
     private IPAddress GetLocalIp()
@@ -72,7 +82,7 @@ public class NetworkInfoProvider
         if (BitConverter.IsLittleEndian) Array.Reverse(bytes);
         return new IPAddress(bytes);
     }
-
+    
     private UnicastIPAddressInformation? GetUnicast()
     {
         NetworkInterface[] interfaces = NetworkInterface.GetAllNetworkInterfaces();
