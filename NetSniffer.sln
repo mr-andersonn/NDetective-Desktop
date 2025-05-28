@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSniffer", "NetSniffer\NetSniffer.csproj", "{F1A4921E-7DAA-4D74-A7BF-81BEDAF8B228}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeoSniffer", "NeoSniffer\NeoSniffer.csproj", "{F1A4921E-7DAA-4D74-A7BF-81BEDAF8B228}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSniffer.Tests", "NetSniffer.Tests\NetSniffer.Tests.csproj", "{E0464BBC-FAE2-455E-85BE-335107624F06}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeoSniffer.Tests", "NeoSniffer.Tests\NeoSniffer.Tests.csproj", "{E0464BBC-FAE2-455E-85BE-335107624F06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
