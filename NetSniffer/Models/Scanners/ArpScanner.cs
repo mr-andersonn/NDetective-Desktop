@@ -22,13 +22,10 @@ public class ArpScanner : IScanner
         await Task.Delay(1000);
         
         //Phase 3: Collect ips from cache
+        var arpTableReader = new ArpTableReader();
+        var devices = arpTableReader.GetDevicesFromCache();
         
-        // TODO: implement ArpTableReader
-
-        
-        
-        // temp return
-        return new ScanResult(0, new List<Device>() { });
+        return new ScanResult(devices);
     }
     
 }

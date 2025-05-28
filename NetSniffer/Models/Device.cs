@@ -4,19 +4,19 @@ namespace NetSniffer.Models;
 
 public class Device : IComparable
 {
-    public string ip { get; private set;}
-    public string mac {get; private set;}
-    public string description {get; set;}
+    public string Ip { get; private set;}
+    public string Mac {get; private set;}
+    public string Description {get; set;}
 
-    public Device(string ip, string mac, string description)
+    public Device(string ip, string mac)
     {
-        this.ip = ip;
-        this.mac = mac;
-        this.description = description;
+        this.Ip = ip;
+        this.Mac = mac;
+        this.Description = $"IP: {ip}\nMAC: {mac}";
     }
     override public string ToString()
     {
-        return $"if: {ip}, mac: {mac}, description: {description}";
+        return $"if: {Ip}, mac: {Mac}, description: {Description}";
     }
     public int CompareTo(object? obj) 
     {

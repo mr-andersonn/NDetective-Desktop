@@ -3,20 +3,22 @@ using System.Collections.Generic;
 
 namespace NetSniffer.Models;
 
-public class ScanResult
+public class ScanResult : IComparable<ScanResult>
 {
-    public int Id { get; set; }
+    public int Id { get; private set; }
     public List<Device> Devices { get; set; }
     public DateTime Time { get; set; }
 
-    public ScanResult(int id, List<Device> devices)
+    public ScanResult(List<Device> devices)
     {
-        this.Id = id;
         this.Devices = devices;
         this.Time = DateTime.Now;
     }
-    public void AddDevice(Device device)
+
+    internal void AssignId(int id) => this.Id = id;
+    
+    public int CompareTo(ScanResult? other)
     {
-       Devices.Add(device);
+        throw new NotImplementedException();
     }
 }
