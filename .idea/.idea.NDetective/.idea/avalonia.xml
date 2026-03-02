@@ -6,6 +6,7 @@
         <entry key="NDetective/App.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NDetective/Styles/Styles.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NDetective/Views/MainWindow.axaml" value="NDetective/NDetective.csproj" />
+        <entry key="NDetective/Views/SearchPageView.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NeoSniffer/App.axaml" value="NeoSniffer/NeoSniffer.csproj" />
         <entry key="NeoSniffer/Styles/Styles.axaml" value="NeoSniffer/NeoSniffer.csproj" />
         <entry key="NeoSniffer/Views/MainWindow.axaml" value="NeoSniffer/NeoSniffer.csproj" />

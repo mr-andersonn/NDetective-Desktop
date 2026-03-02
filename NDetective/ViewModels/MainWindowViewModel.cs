@@ -5,15 +5,9 @@ namespace NDetective.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-    [ObservableProperty]
-    private string _mainTextBlock = "Button is not clicked";
-    private int counter = 0;
-    [RelayCommand]
-    public void MainButtonClicked()
-    {
-        MainTextBlock = "Button clicked " + ++counter + " times";
-    }
-
+    
+    // ---  Menu
+    
     [ObservableProperty]
     private bool _isPaneOpen = true;
 
@@ -22,5 +16,12 @@ public partial class MainWindowViewModel : ViewModelBase
     {
         IsPaneOpen = !IsPaneOpen;
     }
+    
+    
+    
+    // ---  TransitioningContentControl
+
+    [ObservableProperty] 
+    private ViewModelBase _currentPage = new SearchPageViewModel();
 }
 
