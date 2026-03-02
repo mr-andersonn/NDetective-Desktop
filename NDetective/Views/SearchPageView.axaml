@@ -6,3 +6,58 @@
              x:Class="NDetective.Views.SearchPageView">
     Welcome to Avalonia!
 </UserControl>
+
+<!-- <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="Aqua"> -->
+<!--           -->
+<!--         <StackPanel Background="DeepPink" -->
+<!--                     HorizontalAlignment="Stretch"> -->
+<!--             <TextBlock FontSize="25" -->
+<!--                        Foreground="#00FF00" -->
+<!--                        Text="Choose your type of scan" -->
+<!--                        HorizontalAlignment="Center" -->
+<!--                        Margin="0,0,0,25"/> -->
+<!--             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"> -->
+<!--                 <Button x:Name="ArpScanButton" -->
+<!--                         Command="{Binding SetDescriptionCommand }" -->
+<!--                         Content="Arp" -->
+<!--                         Classes="RunButton Common" -->
+<!--                         CommandParameter="ArpScan"/> -->
+<!--                 <Button x:Name="NmapScanButton" -->
+<!--                         Command="{Binding SetDescriptionCommand}" -->
+<!--                         Content="Nmap" -->
+<!--                         Classes="RunButton Common" -->
+<!--                         CommandParameter="NmapScan"/> -->
+<!--             </StackPanel> -->
+<!--              -->
+<!--             <TextBlock Text="{Binding Description}" -->
+<!--                        Margin="15" -->
+<!--                        FontSize="25" -->
+<!--                        Foreground="White" -->
+<!--                        HorizontalAlignment="Center" -->
+<!--                        VerticalAlignment="Center"/> -->
+<!--              -->
+<!--         </StackPanel> -->
+<!-- -->
+<!--         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,25,0,0"> -->
+<!--             <Button x:Name="RunButton" -->
+<!--                     Classes="Common RunButton" -->
+<!--                     Content="Run"/> -->
+<!--             <Button x:Name="StopButton" -->
+<!--                     Classes="Common StopButton" -->
+<!--                     Content="Stop"/> -->
+<!--         </StackPanel> -->
+<!--         -->
+<!--         <ItemsControl x:Name="DeviceList" Margin="25" > -->
+<!--             <ItemsControl.ItemTemplate> -->
+<!--                 <DataTemplate> -->
+<!--                     <TextBlock Text="{Binding}" -->
+<!--                                HorizontalAlignment="Center" -->
+<!--                                Margin="5" -->
+<!--                                FontSize="15" -->
+<!--                                Foreground="Black"/> -->
+<!--                 </DataTemplate> -->
+<!--             </ItemsControl.ItemTemplate> -->
+<!--         </ItemsControl> -->
+<!--          -->
+<!-- -->
+<!--     </StackPanel> -->
