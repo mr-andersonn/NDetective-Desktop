@@ -5,6 +5,7 @@
       <map>
         <entry key="NDetective/App.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NDetective/Styles/Styles.axaml" value="NDetective/NDetective.csproj" />
+        <entry key="NDetective/Views/DevicesPageView.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NDetective/Views/MainWindow.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NDetective/Views/SearchPageView.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NeoSniffer/App.axaml" value="NeoSniffer/NeoSniffer.csproj" />

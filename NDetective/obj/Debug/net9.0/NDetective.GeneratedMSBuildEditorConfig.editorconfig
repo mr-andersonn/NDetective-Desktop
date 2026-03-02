@@ -29,8 +29,14 @@ build_property.EnableCodeStyleSeverity =
 [C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/Views/DevicesPageView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/Views/SearchPageView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/Views/SettingsPageView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
