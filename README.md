@@ -6,13 +6,6 @@
 
 **NetworkDetective** is a cross-platform network scanner built with C# and [Avalonia UI](https://avaloniaui.net/). It scans your local network using ARP and Ping to detect active devices, save them and later detect unauthorized devices. 
 
-<br>
-
-> 🚀 Built in C#
-> 🎯 fast, extensible, and user-friendly
-
-<br><br>
-
 ## 📸 Features
 
 - 🌐 **ARP-based LAN scanning**
