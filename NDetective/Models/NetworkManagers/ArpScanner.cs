@@ -4,7 +4,7 @@ using NDetective.Models.NetworkManagers;
 
 namespace NDetective.Models;
 
-public class ArpScanner : IScanner
+public class ArpScanner
 {
     public async Task<ScanResult> RunScan()
     {
