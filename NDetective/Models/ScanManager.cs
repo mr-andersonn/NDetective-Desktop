@@ -7,6 +7,7 @@ public class ScanManager
 {
     private readonly ArpScanner _arpScanner;
     private readonly SavedScans _savedScans;
+    private readonly CsvDeviceManager _csvDeviceManager;
 
     public event EventHandler? ScanChanged;
 
@@ -14,6 +15,7 @@ public class ScanManager
     {
         _arpScanner = new ArpScanner();
         _savedScans = new SavedScans();
+        _csvDeviceManager = new CsvDeviceManager();
         
         _savedScans.changeDetected += (s, e) => ScanChanged?.Invoke(s, e);
     }
@@ -26,6 +28,10 @@ public class ScanManager
         // Update SavedScans
         _savedScans.AddScanResult(scanResult);
         
+        
+        //Add to CSV
+        _csvDeviceManager.SaveDevices(scanResult.Devices);
+
     }
     
     public ScanResult? GetLastScan()

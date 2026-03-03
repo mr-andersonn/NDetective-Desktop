@@ -15,12 +15,12 @@ public class ScanResult : IComparable<ScanResult>
         this.Devices = devices;
         this.Time = DateTime.Now;
     }
-
+    
     internal void AssignId(int id) => this.Id = id;
     
-    public int CompareTo(ScanResult? other)
+    public int CompareTo(ScanResult? other) 
     {
-        if (other == null) return 1;
+        if (other == null) return 1; 
         if (this.Devices.Count != other.Devices.Count) return 1;
 
         var thisSorted = this.Devices.OrderBy(d => d.Mac).ToList();
