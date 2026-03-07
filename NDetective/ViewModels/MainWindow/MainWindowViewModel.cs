@@ -53,7 +53,9 @@ public partial class MainWindowViewModel : ViewModelBase
     {
         new ListItemTemplate(typeof(SearchPageViewModel), "search_square_regular"),
         new ListItemTemplate(typeof(DevicesPageViewModel), "apps_list_regular"),
+        new ListItemTemplate(typeof(ScansPageViewModel), "book_question_mark_regular"),
         new ListItemTemplate(typeof(SettingsPageViewModel), "settings_regular"),
+        
     };
 }
 

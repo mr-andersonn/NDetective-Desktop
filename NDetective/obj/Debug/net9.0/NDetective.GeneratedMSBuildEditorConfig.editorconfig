@@ -38,6 +38,9 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/Views/ScansPageView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/Views/SearchPageView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

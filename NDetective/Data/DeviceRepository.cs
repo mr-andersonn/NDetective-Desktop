@@ -104,7 +104,7 @@ public static class DeviceRepository
         using var command = connection.CreateCommand();
         command.CommandText = """
                               UPDATE Devices
-                              SET Ip = @ip,
+                              SET Ip = @ip, 
                                   Description = @description
                               WHERE Mac = @mac;
                               """;

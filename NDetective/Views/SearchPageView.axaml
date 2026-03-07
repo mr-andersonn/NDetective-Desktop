@@ -7,11 +7,9 @@
              x:Class="NDetective.Views.SearchPageView"
              x:DataType="vm:SearchPageViewModel">
     
-    <StackPanel HorizontalAlignment="Stretch"
-                Margin="16"
+    <StackPanel Margin="16"
                 Spacing="10">
         <TextBlock Text="Search" FontSize="20"/>
-        
         <StackPanel HorizontalAlignment="Stretch"
                     Orientation="Horizontal"
                     Spacing="10">
@@ -19,19 +17,20 @@
             <Button FontSize="18" Command="{Binding SaveCommand}">Save All</Button>
         </StackPanel>
         
-            
-        <ItemsControl ItemsSource="{Binding displayedDevices}">
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal" Spacing="10">
-                        <TextBlock Text="{Binding Device.Description}"
-                                   Foreground="{Binding Foreground}"
-                                   FontSize="15"/>
+        <ScrollViewer>
+            <ItemsControl ItemsSource="{Binding displayedDevices}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" Spacing="10">
+                            <TextBlock Text="{Binding Device.Description}"
+                                       Foreground="{Binding Foreground}"
+                                       FontSize="15"/>
                             
-                    </StackPanel>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
     </StackPanel>
 
     

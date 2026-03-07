@@ -6,7 +6,7 @@
         mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
         x:Class="NDetective.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-        Icon="/Assets/NDetectiveIcon.ico"
+        Icon="/Assets/NDetectiveIcon.png"
         Title="NDetective"
         Classes="MainWindow">
     

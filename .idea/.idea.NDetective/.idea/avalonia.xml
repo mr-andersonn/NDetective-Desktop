@@ -8,6 +8,7 @@
         <entry key="NDetective/Styles/Styles.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NDetective/Views/DevicesPageView.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NDetective/Views/MainWindow.axaml" value="NDetective/NDetective.csproj" />
+        <entry key="NDetective/Views/ScansPageView.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NDetective/Views/SearchPageView.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NDetective/Views/SettingsPageView.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NeoSniffer/App.axaml" value="NeoSniffer/NeoSniffer.csproj" />
