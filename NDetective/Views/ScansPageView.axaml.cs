@@ -11,8 +11,8 @@ namespace NDetective.Views;
 public partial class ScansPageView : UserControl
 {
 
-    private const int Rows = 10;
-    private const int Cols = 10;
+    private const int Rows = 4;
+    private const int Cols = 4;
     private readonly IBrush _baseColor = Brushes.LightGray;
 
     private bool _stop = true;
@@ -27,8 +27,8 @@ public partial class ScansPageView : UserControl
 
     private void InitGrid()
     {
-        ScansGrid.Height = 500;
-        ScansGrid.Width = 500;
+        ScansGrid.Height = 250;
+        ScansGrid.Width = 250;
         
         for (var j = 0; j < Rows; j++)
         {
@@ -62,7 +62,7 @@ public partial class ScansPageView : UserControl
             if (previous is not null) previous.Fill = _baseColor;
             rect.Fill = Brushes.MediumSeaGreen;
             previous = rect;
-            await Task.Delay(100);
+            await Task.Delay(300);
         }
 
         if (previous is not null) previous.Fill = _baseColor;

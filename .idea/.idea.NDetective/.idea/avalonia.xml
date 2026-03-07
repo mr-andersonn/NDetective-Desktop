@@ -7,6 +7,7 @@
         <entry key="NDetective/Assets/icons.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NDetective/Styles/Styles.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NDetective/Views/DevicesPageView.axaml" value="NDetective/NDetective.csproj" />
+        <entry key="NDetective/Views/EditDeviceView.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NDetective/Views/MainWindow.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NDetective/Views/ScansPageView.axaml" value="NDetective/NDetective.csproj" />
         <entry key="NDetective/Views/SearchPageView.axaml" value="NDetective/NDetective.csproj" />
