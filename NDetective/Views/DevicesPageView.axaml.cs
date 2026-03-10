@@ -45,7 +45,7 @@ public partial class DevicesPageView : UserControl
         
         var screenPoint = button.PointToScreen(new Point(0, 0));
         _editWindow.Position = new PixelPoint(
-            (int) (screenPoint.X + button.Bounds.Width * 1.5),
+            (int) (screenPoint.X + button.Bounds.Width + 50),
             (int) screenPoint.Y);
 
         

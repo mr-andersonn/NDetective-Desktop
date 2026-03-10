@@ -12,10 +12,14 @@ namespace NDetective.ViewModels;
 public partial class DevicesPageViewModel : ViewModelBase
 {
     private readonly ScanManager _scanManager = new();
-    public ObservableCollection<Device> Devices { get; } = new();
+    public ObservableCollection<Device> Devices { get; }
+    
+    public EditDeviceViewModel? CurrentEditVm { get; private set; }
     
     public DevicesPageViewModel()
     {
+        Devices = new ();
+        
         LoadDevices();
         
     }
@@ -28,13 +32,11 @@ public partial class DevicesPageViewModel : ViewModelBase
         {
             Devices.Add(d);
         }
-        
-        Console.WriteLine("LoadDevices done");
     }
     
     [ObservableProperty] private bool _isEditWindowOpen;
 
-    public EditDeviceViewModel? CurrentEditVm { get; private set; }
+
     
     [RelayCommand]
     private void EditDevice(Device d)

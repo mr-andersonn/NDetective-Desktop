@@ -21,7 +21,7 @@
                         <Border BorderBrush="#555"
                                 BorderThickness="0,0,0,1"
                                 Margin="0,4">
-                            <Grid ColumnDefinitions="150,*,*,*" 
+                            <Grid ColumnDefinitions="160,*,*,*" 
                                   Margin="0, 5">
 
                                 <TextBlock Grid.Column="0"
