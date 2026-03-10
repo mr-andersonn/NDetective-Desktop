@@ -15,6 +15,7 @@ public partial class DevicesPageViewModel : ViewModelBase
     public ObservableCollection<Device> Devices { get; }
     
     public EditDeviceViewModel? CurrentEditVm { get; private set; }
+    public AddDeviceViewModel? CurrentAddVm { get; private set; }
     
     public DevicesPageViewModel()
     {
@@ -51,5 +52,16 @@ public partial class DevicesPageViewModel : ViewModelBase
 
     }
 
+    [RelayCommand]
+    private void AddDevice()
+    {
+        IsEditWindowOpen = true;
+
+        var vm = new AddDeviceViewModel();
+        vm.DeviceAdded += LoadDevices;
+
+        CurrentAddVm = vm;
+        OnPropertyChanged(nameof(CurrentAddVm));
+    }
     
 }

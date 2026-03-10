@@ -20,6 +20,7 @@ public partial class AddDeviceViewModel : ViewModelBase
         
         DeviceRepository.Add(d);
         
+        DeviceAdded?.Invoke();
         
     }
 }

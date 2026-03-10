@@ -9,7 +9,18 @@
         Title="Add Device">
     
     
-        <Grid>
-                
+        <Grid RowDefinitions="Auto,*"
+            Margin="16">
+            
+            <StackPanel Grid.Row="0"
+                        Orientation="Vertical">
+                        <TextBlock Text="MAC" />
+                        <TextBlock Text="IP" />
+                        <TextBlock Text="Name" />
+                        <TextBlock Text="Description" />
+                </StackPanel>
+            
+                <Button Grid.Row="1" Content="Add"
+                        Command="{Binding AddDeviceCommand}"/>
         </Grid>
 </Window>

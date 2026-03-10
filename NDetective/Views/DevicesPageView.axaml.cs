@@ -12,6 +12,7 @@ namespace NDetective.Views;
 public partial class DevicesPageView : UserControl
 {
     private EditDeviceWindow? _editWindow;
+    private AddDeviceWindow? _addWindow;
     
     
     public DevicesPageView()
@@ -58,6 +59,24 @@ public partial class DevicesPageView : UserControl
         _editWindow.Show();
         
     }
-    
-    
+
+
+    private void OpenAddDeviceWindow(object? sender, RoutedEventArgs e)
+    {
+        if (DataContext is not DevicesPageViewModel parentVm)
+            return;
+
+        if (sender is not Button button)
+            return;
+
+        if (_addWindow is not null)
+        {
+            _addWindow.Activate();
+            return;
+        }
+        
+        parentVm.AddDeviceCommand.Execute(null);
+        
+        
+    }
 }

@@ -61,7 +61,8 @@
                     VerticalContentAlignment="Center"
                     HorizontalContentAlignment="Center"
                     VerticalAlignment="Bottom"
-                    HorizontalAlignment="Right"/>
+                    HorizontalAlignment="Right"
+                    Click="OpenAddDeviceWindow"/>
         </Grid>
         
 
