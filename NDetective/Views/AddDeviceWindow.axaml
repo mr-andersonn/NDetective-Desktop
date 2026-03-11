@@ -5,6 +5,8 @@
         xmlns:vm="clr-namespace:NDetective.ViewModels"
         x:DataType="vm:AddDeviceViewModel"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Width="400" Height="400"
+        Background="#1e1e1e"
         x:Class="NDetective.Views.AddDeviceWindow"
         Title="Add Device">
     
@@ -21,6 +23,8 @@
                 </StackPanel>
             
                 <Button Grid.Row="1" Content="Add"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Bottom"
                         Command="{Binding AddDeviceCommand}"/>
         </Grid>
 </Window>

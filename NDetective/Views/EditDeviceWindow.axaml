@@ -5,8 +5,8 @@
         xmlns:vm="clr-namespace:NDetective.ViewModels"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         Width="400" Height="400"
-        Title="{Binding WindowTitle}"
         Background="#1e1e1e"
+        Title="{Binding WindowTitle}"
         Icon="/Assets/NDetectiveIcon.png"
         x:Class="NDetective.Views.EditDeviceWindow"
         x:DataType="vm:EditDeviceViewModel">

@@ -77,6 +77,26 @@ public partial class DevicesPageView : UserControl
         
         parentVm.AddDeviceCommand.Execute(null);
         
+        var vm = parentVm.CurrentAddVm;
+        if (vm is null)
+            return;
+        
+        _addWindow = new AddDeviceWindow { DataContext = vm };
+        
+        vm.DeviceAdded += _addWindow.Close;
+        
+        var screenPoint = button.PointToScreen(new Point(0, 0));
+        _addWindow.Position = new PixelPoint(
+            (int) (screenPoint.X + button.Bounds.Width + 50),
+            (int) screenPoint.Y - (int) _addWindow.Height + (int) button.Height / 2);
+        
+        _addWindow.Closed += (_, _) =>
+        {
+            _addWindow = null;
+        };
+        
+        _addWindow.Show();
+
         
     }
 }
