@@ -32,13 +32,13 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/Assets/icons.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/Views/AddDeviceWindow.axaml]
+[C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/Views/DevicesPage/AddDeviceWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/Views/DevicesPageView.axaml]
+[C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/Views/DevicesPage/DevicesPageView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/Views/EditDeviceWindow.axaml]
+[C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/Views/DevicesPage/EditDeviceWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/anton/Documents/Workspaces/GitHubDesktop/NDetective/NDetective/Views/MainWindow.axaml]

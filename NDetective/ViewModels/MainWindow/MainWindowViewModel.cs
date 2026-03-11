@@ -21,7 +21,7 @@ public partial class MainWindowViewModel : ViewModelBase
     
     // ---  Menu
     
-    [ObservableProperty] private bool _isPaneOpen = true;
+    [ObservableProperty] private bool _isPaneOpen = false;
     [ObservableProperty] private StreamGeometry? _paneClosedIcon;
     [ObservableProperty] private StreamGeometry? _paneOpenIcon;
     [ObservableProperty] private StreamGeometry? _currentPaneIcon;
