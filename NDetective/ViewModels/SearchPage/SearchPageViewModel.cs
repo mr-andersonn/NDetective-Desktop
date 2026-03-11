@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,27 +15,41 @@ public partial class SearchPageViewModel : ViewModelBase
     private static readonly ScanManager _scanManager = new();
     public ObservableCollection<Device> Devices { get; } = new();
     public ObservableCollection<Device> SavedDevices { get; } = new(DeviceRepository.GetAll());
+
+    public bool ScanRunning;
     
     public ObservableCollection<DisplayedDevice> displayedDevices { get; } = new();
     
     [RelayCommand]
     private async Task Scan()
     {
-        displayedDevices.Clear();
+        ScanRunning = true;
         
-        await _scanManager.RunArpScan();
+        int i = 0;
         
-        Devices.Clear();
-        if (_scanManager.LastScan?.Devices is null) return;
-
-        foreach (var d in _scanManager.LastScan.Devices)
+        while (ScanRunning)
         {
-            Devices.Add(d);
+            displayedDevices.Clear();
+        
+            await _scanManager.RunArpScan();
+        
+            Devices.Clear();
+            if (_scanManager.LastScan?.Devices is null) return;
+
+            foreach (var d in _scanManager.LastScan.Devices)
+            {
+                Devices.Add(d);
             
-            bool isAuthorized = SavedDevices.Contains(d);
+                bool isAuthorized = SavedDevices.Contains(d);
             
-            displayedDevices.Add(new DisplayedDevice(d, isAuthorized));
+                displayedDevices.Add(new DisplayedDevice(d, isAuthorized));
+            }
+
+            Console.WriteLine($"Iteration {++i}");
+            
+            await Task.Delay(5000);
         }
+        
 
     }
     
@@ -42,5 +57,11 @@ public partial class SearchPageViewModel : ViewModelBase
     private void Save()
     {
         _scanManager.SaveLastScanDevices();
+    }
+
+    [RelayCommand]
+    private void Stop()
+    {
+        ScanRunning = false;
     }
 }
