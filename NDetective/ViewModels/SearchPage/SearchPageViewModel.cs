@@ -28,6 +28,8 @@ public partial class SearchPageViewModel : ViewModelBase
         
         int i = 0;
         
+        Console.WriteLine("Scan started.");
+        
         while (ScanRunning)
         {
             Authorized.Clear();
@@ -67,9 +69,11 @@ public partial class SearchPageViewModel : ViewModelBase
 
             Console.WriteLine($"Iteration {++i}");
             
-            await Task.Delay(5000);
+            if(ScanRunning)
+                await Task.Delay(5000);
         }
         
+        Console.WriteLine("Scan stopped.");
 
     }
     
