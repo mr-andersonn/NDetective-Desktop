@@ -16,7 +16,7 @@ public partial class SearchPageViewModel : ViewModelBase
     public ObservableCollection<Device> Devices { get; } = new();
     public ObservableCollection<Device> SavedDevices { get; } = new(DeviceRepository.GetAll());
 
-    public bool ScanRunning;
+    public static bool ScanRunning;
     
     public ObservableCollection<DisplayedDevice> Authorized { get; } = new();
     public ObservableCollection<DisplayedDevice> Unauthorized { get; } = new(); 
@@ -40,8 +40,6 @@ public partial class SearchPageViewModel : ViewModelBase
             {
                 bool isAuthorized = SavedDevices.Contains(d);
 
-                var list = (isAuthorized) ? Authorized : Unauthorized;
-
                 if (isAuthorized)
                 {
                     Authorized.Add(new DisplayedDevice(d, isAuthorized));
@@ -51,9 +49,13 @@ public partial class SearchPageViewModel : ViewModelBase
                     var match = false;
                     foreach (var ud in Unauthorized)
                     {
-                        if (ud.Device.Equals(d))
-                            match = true;
+                        if (!ud.Device.Equals(d)) continue;
+                        
+                        match = true;
                         break;
+
+
+
                     }
 
                     if (!match)

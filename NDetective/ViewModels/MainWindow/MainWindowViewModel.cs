@@ -47,6 +47,11 @@ public partial class MainWindowViewModel : ViewModelBase
         var instance = Activator.CreateInstance(value.ModelType);
         if (instance is null) return;
         CurrentPage = (ViewModelBase)instance;
+
+        if (CurrentPage.GetType() != typeof(SearchPageViewModel))
+        {
+            SearchPageViewModel.ScanRunning = false;
+        }
     }
     
     public ObservableCollection<ListItemTemplate> Items { get; } = new()
