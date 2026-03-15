@@ -13,4 +13,22 @@
         <StyleInclude Source="avares://NDetective/Assets/icons.axaml" />
     </Application.Styles>
     
+    <TrayIcon.Icons>
+        <TrayIcons>
+            <TrayIcon Icon="/Assets/NDetectiveIcon.png"
+                      ToolTipText="NDetective"
+                      Clicked="TrayClicked">
+                <TrayIcon.Menu>
+                    <NativeMenu>
+                        <NativeMenuItem Header="Open" 
+                                        Click="OpenApp"/>
+                        <NativeMenuItem Header="Hide" 
+                                        Click="HideApp"/>
+                        <NativeMenuItem Header="Exit" 
+                                        Click="CloseApp"/>
+                    </NativeMenu>
+                </TrayIcon.Menu>
+            </TrayIcon>
+        </TrayIcons>
+    </TrayIcon.Icons>
 </Application>

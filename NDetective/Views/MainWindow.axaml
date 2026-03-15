@@ -60,7 +60,7 @@
         
         <!-- This is the main window that changes -->
         <SplitView.Content>
-            <Border Background="#000">
+            <Border Background="#111">
                 <TransitioningContentControl Content="{Binding CurrentPage}" />
             </Border>
         </SplitView.Content>

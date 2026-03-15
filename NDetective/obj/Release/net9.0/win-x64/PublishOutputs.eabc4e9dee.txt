@@ -1,0 +1,6 @@
+C:\Users\anton\Downloads\TestingNDetective\NDetective.pdb
+C:\Users\anton\Downloads\TestingNDetective\av_libglesv2.dll
+C:\Users\anton\Downloads\TestingNDetective\libHarfBuzzSharp.dll
+C:\Users\anton\Downloads\TestingNDetective\libSkiaSharp.dll
+C:\Users\anton\Downloads\TestingNDetective\e_sqlite3.dll
+C:\Users\anton\Downloads\TestingNDetective\NDetective.exe

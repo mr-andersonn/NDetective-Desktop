@@ -107,23 +107,6 @@
           "buildTransitive/Avalonia.BuildServices.targets": {}
         }
       },
-      "Avalonia.Controls.ColorPicker/11.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Avalonia": "11.3.0",
-          "Avalonia.Remote.Protocol": "11.3.0"
-        },
-        "compile": {
-          "lib/net8.0/Avalonia.Controls.ColorPicker.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Avalonia.Controls.ColorPicker.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Avalonia.Desktop/11.3.0": {
         "type": "package",
         "dependencies": {
@@ -140,24 +123,6 @@
         },
         "runtime": {
           "lib/net8.0/Avalonia.Desktop.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Avalonia.Diagnostics/11.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Avalonia": "11.3.0",
-          "Avalonia.Controls.ColorPicker": "11.3.0",
-          "Avalonia.Themes.Simple": "11.3.0"
-        },
-        "compile": {
-          "lib/net8.0/Avalonia.Diagnostics.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Avalonia.Diagnostics.dll": {
             "related": ".xml"
           }
         }
@@ -264,22 +229,6 @@
         },
         "runtime": {
           "lib/net8.0/Avalonia.Themes.Fluent.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Avalonia.Themes.Simple/11.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Avalonia": "11.3.0"
-        },
-        "compile": {
-          "lib/net8.0/Avalonia.Themes.Simple.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net8.0/Avalonia.Themes.Simple.dll": {
             "related": ".xml"
           }
         }
@@ -495,6 +444,12 @@
           "lib/netstandard2.0/Microsoft.Data.Sqlite.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/9.0.5": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
         }
       },
       "Microsoft.NET.Test.Sdk/17.12.0": {
@@ -1210,7 +1165,973 @@
         "dependencies": {
           "Avalonia": "11.3.0",
           "Avalonia.Desktop": "11.3.0",
-          "Avalonia.Diagnostics": "11.3.0",
+          "Avalonia.Fonts.Inter": "11.3.0",
+          "Avalonia.Themes.Fluent": "11.3.0",
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Data.Sqlite": "11.0.0-preview.1.26104.118"
+        },
+        "compile": {
+          "bin/placeholder/NDetective.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NDetective.dll": {}
+        }
+      }
+    },
+    "net9.0/win-x64": {
+      "Avalonia/11.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia.BuildServices": "0.0.31",
+          "Avalonia.Remote.Protocol": "11.3.0",
+          "MicroCom.Runtime": "0.11.0"
+        },
+        "compile": {
+          "ref/net8.0/Avalonia.Base.dll": {
+            "related": ".xml"
+          },
+          "ref/net8.0/Avalonia.Controls.dll": {
+            "related": ".xml"
+          },
+          "ref/net8.0/Avalonia.DesignerSupport.dll": {
+            "related": ".xml"
+          },
+          "ref/net8.0/Avalonia.Dialogs.dll": {
+            "related": ".xml"
+          },
+          "ref/net8.0/Avalonia.Markup.Xaml.dll": {
+            "related": ".xml"
+          },
+          "ref/net8.0/Avalonia.Markup.dll": {
+            "related": ".Xaml.xml;.xml"
+          },
+          "ref/net8.0/Avalonia.Metal.dll": {
+            "related": ".xml"
+          },
+          "ref/net8.0/Avalonia.MicroCom.dll": {
+            "related": ".xml"
+          },
+          "ref/net8.0/Avalonia.OpenGL.dll": {
+            "related": ".xml"
+          },
+          "ref/net8.0/Avalonia.Vulkan.dll": {
+            "related": ".xml"
+          },
+          "ref/net8.0/Avalonia.dll": {
+            "related": ".Base.xml;.Controls.xml;.DesignerSupport.xml;.Dialogs.xml;.Markup.Xaml.xml;.Markup.xml;.Metal.xml;.MicroCom.xml;.OpenGL.xml;.Vulkan.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Avalonia.Base.dll": {
+            "related": ".xml"
+          },
+          "lib/net8.0/Avalonia.Controls.dll": {
+            "related": ".xml"
+          },
+          "lib/net8.0/Avalonia.DesignerSupport.dll": {
+            "related": ".xml"
+          },
+          "lib/net8.0/Avalonia.Dialogs.dll": {
+            "related": ".xml"
+          },
+          "lib/net8.0/Avalonia.Markup.Xaml.dll": {
+            "related": ".xml"
+          },
+          "lib/net8.0/Avalonia.Markup.dll": {
+            "related": ".Xaml.xml;.xml"
+          },
+          "lib/net8.0/Avalonia.Metal.dll": {
+            "related": ".xml"
+          },
+          "lib/net8.0/Avalonia.MicroCom.dll": {
+            "related": ".xml"
+          },
+          "lib/net8.0/Avalonia.OpenGL.dll": {
+            "related": ".xml"
+          },
+          "lib/net8.0/Avalonia.Vulkan.dll": {
+            "related": ".xml"
+          },
+          "lib/net8.0/Avalonia.dll": {
+            "related": ".Base.xml;.Controls.xml;.DesignerSupport.xml;.Dialogs.xml;.Markup.Xaml.xml;.Markup.xml;.Metal.xml;.MicroCom.xml;.OpenGL.xml;.Vulkan.xml;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Avalonia.props": {},
+          "buildTransitive/Avalonia.targets": {}
+        }
+      },
+      "Avalonia.Angle.Windows.Natives/2.1.22045.20230930": {
+        "type": "package",
+        "native": {
+          "runtimes/win-x64/native/av_libglesv2.dll": {}
+        }
+      },
+      "Avalonia.BuildServices/0.0.31": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Avalonia.BuildServices.targets": {}
+        }
+      },
+      "Avalonia.Desktop/11.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.0",
+          "Avalonia.Native": "11.3.0",
+          "Avalonia.Skia": "11.3.0",
+          "Avalonia.Win32": "11.3.0",
+          "Avalonia.X11": "11.3.0"
+        },
+        "compile": {
+          "lib/net8.0/Avalonia.Desktop.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Avalonia.Desktop.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Avalonia.Fonts.Inter/11.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.0"
+        },
+        "compile": {
+          "lib/net8.0/Avalonia.Fonts.Inter.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Avalonia.Fonts.Inter.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Avalonia.FreeDesktop/11.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.0",
+          "Tmds.DBus.Protocol": "0.21.2"
+        },
+        "compile": {
+          "lib/net8.0/Avalonia.FreeDesktop.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Avalonia.FreeDesktop.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Avalonia.Native/11.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.0"
+        },
+        "compile": {
+          "lib/net8.0/Avalonia.Native.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Avalonia.Native.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Avalonia.Remote.Protocol/11.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Avalonia.Remote.Protocol.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Avalonia.Remote.Protocol.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Avalonia.Skia/11.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.0",
+          "HarfBuzzSharp": "7.3.0.3",
+          "HarfBuzzSharp.NativeAssets.Linux": "7.3.0.3",
+          "HarfBuzzSharp.NativeAssets.WebAssembly": "7.3.0.3",
+          "SkiaSharp": "2.88.9",
+          "SkiaSharp.NativeAssets.Linux": "2.88.9",
+          "SkiaSharp.NativeAssets.WebAssembly": "2.88.9"
+        },
+        "compile": {
+          "lib/net8.0/Avalonia.Skia.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Avalonia.Skia.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Avalonia.Themes.Fluent/11.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.0"
+        },
+        "compile": {
+          "lib/net8.0/Avalonia.Themes.Fluent.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Avalonia.Themes.Fluent.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Avalonia.Win32/11.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.0",
+          "Avalonia.Angle.Windows.Natives": "2.1.22045.20230930"
+        },
+        "compile": {
+          "lib/net8.0/Avalonia.Win32.Automation.dll": {
+            "related": ".xml"
+          },
+          "lib/net8.0/Avalonia.Win32.dll": {
+            "related": ".Automation.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Avalonia.Win32.Automation.dll": {
+            "related": ".xml"
+          },
+          "lib/net8.0/Avalonia.Win32.dll": {
+            "related": ".Automation.xml;.xml"
+          }
+        }
+      },
+      "Avalonia.X11/11.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.0",
+          "Avalonia.FreeDesktop": "11.3.0",
+          "Avalonia.Skia": "11.3.0"
+        },
+        "compile": {
+          "lib/net8.0/Avalonia.X11.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Avalonia.X11.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/CommunityToolkit.Mvvm.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/CommunityToolkit.Mvvm.targets": {}
+        }
+      },
+      "coverlet.collector/6.0.2": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/coverlet.collector.targets": {}
+        }
+      },
+      "HarfBuzzSharp/7.3.0.3": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp.NativeAssets.Win32": "7.3.0.3",
+          "HarfBuzzSharp.NativeAssets.macOS": "7.3.0.3"
+        },
+        "compile": {
+          "lib/net6.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/HarfBuzzSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Linux/7.3.0.3": {
+        "type": "package",
+        "dependencies": {
+          "HarfBuzzSharp": "7.3.0.3"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.macOS/7.3.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.WebAssembly/7.3.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/netstandard1.0/HarfBuzzSharp.NativeAssets.WebAssembly.props": {},
+          "buildTransitive/netstandard1.0/HarfBuzzSharp.NativeAssets.WebAssembly.targets": {}
+        }
+      },
+      "HarfBuzzSharp.NativeAssets.Win32/7.3.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        },
+        "native": {
+          "runtimes/win-x64/native/libHarfBuzzSharp.dll": {}
+        }
+      },
+      "MicroCom.Runtime/0.11.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/MicroCom.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/MicroCom.Runtime.dll": {}
+        }
+      },
+      "Microsoft.CodeCoverage/17.12.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {}
+        },
+        "build": {
+          "build/netstandard2.0/Microsoft.CodeCoverage.props": {},
+          "build/netstandard2.0/Microsoft.CodeCoverage.targets": {}
+        }
+      },
+      "Microsoft.Data.Sqlite/11.0.0-preview.1.26104.118": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Data.Sqlite.Core": "11.0.0-preview.1.26104.118",
+          "SQLitePCLRaw.bundle_e_sqlite3": "3.0.2",
+          "SQLitePCLRaw.core": "3.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        }
+      },
+      "Microsoft.Data.Sqlite.Core/11.0.0-preview.1.26104.118": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "3.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.NET.ILLink.Tasks/9.0.5": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.NET.ILLink.Tasks.props": {}
+        }
+      },
+      "Microsoft.NET.Test.Sdk/17.12.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeCoverage": "17.12.0",
+          "Microsoft.TestPlatform.TestHost": "17.12.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/_._": {}
+        },
+        "build": {
+          "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.props": {},
+          "build/netcoreapp3.1/Microsoft.NET.Test.Sdk.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
+        }
+      },
+      "Microsoft.TestPlatform.ObjectModel/17.12.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection.Metadata": "1.6.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll": {},
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll": {},
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {}
+        },
+        "resource": {
+          "lib/netcoreapp3.1/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netcoreapp3.1/de/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netcoreapp3.1/es/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netcoreapp3.1/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netcoreapp3.1/it/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netcoreapp3.1/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netcoreapp3.1/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netcoreapp3.1/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netcoreapp3.1/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netcoreapp3.1/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.TestPlatform.TestHost/17.12.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.TestPlatform.ObjectModel": "17.12.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CommunicationUtilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CrossPlatEngine.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.Utilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.Common.dll": {},
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {},
+          "lib/netcoreapp3.1/testhost.dll": {
+            "related": ".deps.json"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CommunicationUtilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.CrossPlatEngine.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll": {},
+          "lib/netcoreapp3.1/Microsoft.TestPlatform.Utilities.dll": {},
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.Common.dll": {},
+          "lib/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll": {},
+          "lib/netcoreapp3.1/testhost.dll": {
+            "related": ".deps.json"
+          }
+        },
+        "resource": {
+          "lib/netcoreapp3.1/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netcoreapp3.1/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netcoreapp3.1/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netcoreapp3.1/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netcoreapp3.1/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netcoreapp3.1/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netcoreapp3.1/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netcoreapp3.1/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netcoreapp3.1/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netcoreapp3.1/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netcoreapp3.1/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netcoreapp3.1/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netcoreapp3.1/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netcoreapp3.1/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netcoreapp3.1/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netcoreapp3.1/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netcoreapp3.1/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netcoreapp3.1/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netcoreapp3.1/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netcoreapp3.1/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll": {
+            "locale": "zh-Hant"
+          },
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "build": {
+          "build/netcoreapp3.1/Microsoft.TestPlatform.TestHost.props": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SkiaSharp/2.88.9": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "2.88.9",
+          "SkiaSharp.NativeAssets.macOS": "2.88.9"
+        },
+        "compile": {
+          "lib/net6.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Linux/2.88.9": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp": "2.88.9"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/2.88.9": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        }
+      },
+      "SkiaSharp.NativeAssets.WebAssembly/2.88.9": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/netstandard1.0/SkiaSharp.NativeAssets.WebAssembly.props": {},
+          "buildTransitive/netstandard1.0/SkiaSharp.NativeAssets.WebAssembly.targets": {}
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/2.88.9": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        },
+        "native": {
+          "runtimes/win-x64/native/libSkiaSharp.dll": {}
+        }
+      },
+      "SourceGear.sqlite3/3.50.4.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "native": {
+          "runtimes/win-x64/native/e_sqlite3.dll": {}
+        },
+        "build": {
+          "buildTransitive/net9.0/SourceGear.sqlite3.targets": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_e_sqlite3/3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.config.e_sqlite3": "3.0.2",
+          "SourceGear.sqlite3": "3.50.4.2"
+        }
+      },
+      "SQLitePCLRaw.config.e_sqlite3/3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.provider.e_sqlite3": "3.0.2"
+        },
+        "compile": {
+          "lib/net8.0/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.6.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3/3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "3.0.2"
+        },
+        "compile": {
+          "lib/net8.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
+      "System.IO.Pipelines/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Memory/4.6.3": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Reflection.Metadata/1.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Tmds.DBus.Protocol/0.21.2": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.Pipelines": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Tmds.DBus.Protocol.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Tmds.DBus.Protocol.dll": {}
+        }
+      },
+      "xunit/2.9.2": {
+        "type": "package",
+        "dependencies": {
+          "xunit.analyzers": "1.16.0",
+          "xunit.assert": "2.9.2",
+          "xunit.core": "[2.9.2]"
+        }
+      },
+      "xunit.abstractions/2.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/xunit.abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/xunit.abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "xunit.analyzers/1.16.0": {
+        "type": "package"
+      },
+      "xunit.assert/2.9.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/xunit.assert.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/xunit.assert.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "xunit.core/2.9.2": {
+        "type": "package",
+        "dependencies": {
+          "xunit.extensibility.core": "[2.9.2]",
+          "xunit.extensibility.execution": "[2.9.2]"
+        },
+        "build": {
+          "build/xunit.core.props": {},
+          "build/xunit.core.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/xunit.core.props": {},
+          "buildMultiTargeting/xunit.core.targets": {}
+        }
+      },
+      "xunit.extensibility.core/2.9.2": {
+        "type": "package",
+        "dependencies": {
+          "xunit.abstractions": "2.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.1/xunit.core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "xunit.extensibility.execution/2.9.2": {
+        "type": "package",
+        "dependencies": {
+          "xunit.extensibility.core": "[2.9.2]"
+        },
+        "compile": {
+          "lib/netstandard1.1/xunit.execution.dotnet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.execution.dotnet.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "xunit.runner.visualstudio/2.8.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        },
+        "build": {
+          "build/net6.0/xunit.runner.visualstudio.props": {}
+        }
+      },
+      "NDetective/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Avalonia": "11.3.0",
+          "Avalonia.Desktop": "11.3.0",
           "Avalonia.Fonts.Inter": "11.3.0",
           "Avalonia.Themes.Fluent": "11.3.0",
           "CommunityToolkit.Mvvm": "8.4.0",
@@ -1429,24 +2350,6 @@
         "tools/netstandard2.0/runtimeconfig.json"
       ]
     },
-    "Avalonia.Controls.ColorPicker/11.3.0": {
-      "sha512": "MqwZPVdBiDc0h6DHVG5Igb+bd+3o7IOM9nbHgNPlJn38xG0jQb+YqqRcvnt/KnD5FBEaXZcGmiW3rqU9ydXvlg==",
-      "type": "package",
-      "path": "avalonia.controls.colorpicker/11.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "avalonia.controls.colorpicker.11.3.0.nupkg.sha512",
-        "avalonia.controls.colorpicker.nuspec",
-        "lib/net6.0/Avalonia.Controls.ColorPicker.dll",
-        "lib/net6.0/Avalonia.Controls.ColorPicker.xml",
-        "lib/net8.0/Avalonia.Controls.ColorPicker.dll",
-        "lib/net8.0/Avalonia.Controls.ColorPicker.xml",
-        "lib/netstandard2.0/Avalonia.Controls.ColorPicker.dll",
-        "lib/netstandard2.0/Avalonia.Controls.ColorPicker.xml"
-      ]
-    },
     "Avalonia.Desktop/11.3.0": {
       "sha512": "X1nUSIDHPFt34U8Dn4Hk8/c/i+rN3pA0Nv4awfYHlYdenmLqE82gm8fpKmQE6/OfguUN1yMYi/uU9lAAAbd2hg==",
       "type": "package",
@@ -1463,24 +2366,6 @@
         "lib/net8.0/Avalonia.Desktop.xml",
         "lib/netstandard2.0/Avalonia.Desktop.dll",
         "lib/netstandard2.0/Avalonia.Desktop.xml"
-      ]
-    },
-    "Avalonia.Diagnostics/11.3.0": {
-      "sha512": "P152VhCexkrvTLRiRj7mSzUSMGKwTEsbz/XWTogV/33vGVWeCC8tStf/c8YsRrU5kSITtKeCV52UOh4m46hTfA==",
-      "type": "package",
-      "path": "avalonia.diagnostics/11.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "avalonia.diagnostics.11.3.0.nupkg.sha512",
-        "avalonia.diagnostics.nuspec",
-        "lib/net6.0/Avalonia.Diagnostics.dll",
-        "lib/net6.0/Avalonia.Diagnostics.xml",
-        "lib/net8.0/Avalonia.Diagnostics.dll",
-        "lib/net8.0/Avalonia.Diagnostics.xml",
-        "lib/netstandard2.0/Avalonia.Diagnostics.dll",
-        "lib/netstandard2.0/Avalonia.Diagnostics.xml"
       ]
     },
     "Avalonia.Fonts.Inter/11.3.0": {
@@ -1590,24 +2475,6 @@
         "lib/net8.0/Avalonia.Themes.Fluent.xml",
         "lib/netstandard2.0/Avalonia.Themes.Fluent.dll",
         "lib/netstandard2.0/Avalonia.Themes.Fluent.xml"
-      ]
-    },
-    "Avalonia.Themes.Simple/11.3.0": {
-      "sha512": "pGurEpish9NS89iiBLbvIlN+DJ5hGaW1ABxcIl6XL9M/WcvUPtLznxoI0dbW2zw8OLDSsvowbsvQLdyknEvmhA==",
-      "type": "package",
-      "path": "avalonia.themes.simple/11.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "avalonia.themes.simple.11.3.0.nupkg.sha512",
-        "avalonia.themes.simple.nuspec",
-        "lib/net6.0/Avalonia.Themes.Simple.dll",
-        "lib/net6.0/Avalonia.Themes.Simple.xml",
-        "lib/net8.0/Avalonia.Themes.Simple.dll",
-        "lib/net8.0/Avalonia.Themes.Simple.xml",
-        "lib/netstandard2.0/Avalonia.Themes.Simple.dll",
-        "lib/netstandard2.0/Avalonia.Themes.Simple.xml"
       ]
     },
     "Avalonia.Win32/11.3.0": {
@@ -2046,6 +2913,57 @@
         "lib/netstandard2.0/Microsoft.Data.Sqlite.xml",
         "microsoft.data.sqlite.core.11.0.0-preview.1.26104.118.nupkg.sha512",
         "microsoft.data.sqlite.core.nuspec"
+      ]
+    },
+    "Microsoft.NET.ILLink.Tasks/9.0.5": {
+      "sha512": "4L7wbb3Y4BJgIeSnmAf/C6S/qCs9rT1b0dX72uj3qo0qvUH7D0U1tU5ZlC7A3Wb8E/dXK4caOi4JkdLTVJaXhw==",
+      "type": "package",
+      "path": "microsoft.net.illink.tasks/9.0.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "Sdk/Sdk.props",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/cs/ILLink.CodeFixProvider.dll",
+        "analyzers/dotnet/cs/ILLink.RoslynAnalyzer.dll",
+        "build/Microsoft.NET.ILLink.Analyzers.props",
+        "build/Microsoft.NET.ILLink.Tasks.props",
+        "build/Microsoft.NET.ILLink.targets",
+        "microsoft.net.illink.tasks.9.0.5.nupkg.sha512",
+        "microsoft.net.illink.tasks.nuspec",
+        "tools/net472/ILLink.Tasks.dll",
+        "tools/net472/ILLink.Tasks.dll.config",
+        "tools/net472/Mono.Cecil.Mdb.dll",
+        "tools/net472/Mono.Cecil.Pdb.dll",
+        "tools/net472/Mono.Cecil.Rocks.dll",
+        "tools/net472/Mono.Cecil.dll",
+        "tools/net472/Sdk/Sdk.props",
+        "tools/net472/System.Buffers.dll",
+        "tools/net472/System.Collections.Immutable.dll",
+        "tools/net472/System.Memory.dll",
+        "tools/net472/System.Numerics.Vectors.dll",
+        "tools/net472/System.Reflection.Metadata.dll",
+        "tools/net472/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/net472/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net472/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net472/build/Microsoft.NET.ILLink.targets",
+        "tools/net9.0/ILLink.Tasks.deps.json",
+        "tools/net9.0/ILLink.Tasks.dll",
+        "tools/net9.0/Mono.Cecil.Mdb.dll",
+        "tools/net9.0/Mono.Cecil.Pdb.dll",
+        "tools/net9.0/Mono.Cecil.Rocks.dll",
+        "tools/net9.0/Mono.Cecil.dll",
+        "tools/net9.0/Sdk/Sdk.props",
+        "tools/net9.0/build/Microsoft.NET.ILLink.Analyzers.props",
+        "tools/net9.0/build/Microsoft.NET.ILLink.Tasks.props",
+        "tools/net9.0/build/Microsoft.NET.ILLink.targets",
+        "tools/net9.0/illink.deps.json",
+        "tools/net9.0/illink.dll",
+        "tools/net9.0/illink.runtimeconfig.json",
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.NET.Test.Sdk/17.12.0": {
@@ -2792,6 +3710,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.Data.Sqlite >= 11.0.0-preview.1.26104.118",
+      "Microsoft.NET.ILLink.Tasks >= 9.0.5",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "NDetective >= 1.0.0",
       "coverlet.collector >= 6.0.2",
@@ -2858,6 +3777,12 @@
             "target": "Package",
             "version": "[11.0.0-preview.1.26104.118, )"
           },
+          "Microsoft.NET.ILLink.Tasks": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[9.0.5, )",
+            "autoReferenced": true
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.12.0, )"
@@ -2886,12 +3811,31 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
+            "version": "[9.0.5, 9.0.5]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Runtime.win-x64",
+            "version": "[9.0.5, 9.0.5]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
+            "version": "[9.0.5, 9.0.5]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x64": {
+        "#import": []
       }
     }
   }

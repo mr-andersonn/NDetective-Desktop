@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DXkYdVH2NwY=",
+  "dgSpecHash": "YbVN7YhvCaU=",
   "success": true,
   "projectFilePath": "C:\\Users\\anton\\Documents\\Workspaces\\GitHubDesktop\\NDetective\\NDetective\\NDetective.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\anton\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\microsoft.data.sqlite\\11.0.0-preview.1.26104.118\\microsoft.data.sqlite.11.0.0-preview.1.26104.118.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\microsoft.data.sqlite.core\\11.0.0-preview.1.26104.118\\microsoft.data.sqlite.core.11.0.0-preview.1.26104.118.nupkg.sha512",
+    "C:\\Users\\anton\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.5\\microsoft.net.illink.tasks.9.0.5.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\skiasharp\\2.88.9\\skiasharp.2.88.9.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\skiasharp.nativeassets.linux\\2.88.9\\skiasharp.nativeassets.linux.2.88.9.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.9\\skiasharp.nativeassets.macos.2.88.9.nupkg.sha512",
@@ -40,7 +41,10 @@
     "C:\\Users\\anton\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\3.0.2\\sqlitepclraw.provider.e_sqlite3.3.0.2.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\system.memory\\4.6.3\\system.memory.4.6.3.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\tmds.dbus.protocol\\0.21.2\\tmds.dbus.protocol.0.21.2.nupkg.sha512"
+    "C:\\Users\\anton\\.nuget\\packages\\tmds.dbus.protocol\\0.21.2\\tmds.dbus.protocol.0.21.2.nupkg.sha512",
+    "C:\\Users\\anton\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\9.0.5\\microsoft.netcore.app.runtime.win-x64.9.0.5.nupkg.sha512",
+    "C:\\Users\\anton\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\9.0.5\\microsoft.windowsdesktop.app.runtime.win-x64.9.0.5.nupkg.sha512",
+    "C:\\Users\\anton\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\9.0.5\\microsoft.aspnetcore.app.runtime.win-x64.9.0.5.nupkg.sha512"
   ],
   "logs": []
 }
