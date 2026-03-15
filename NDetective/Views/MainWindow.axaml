@@ -8,7 +8,7 @@
         WindowStartupLocation="CenterScreen"
         x:Class="NDetective.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
-        Icon="/Assets/NDetectiveIcon.png"
+        Icon="/Assets/NDetectiveIcon.ico"
         Title="NDetective"
         Classes="MainWindow">
     
@@ -23,43 +23,44 @@
 
 
     <SplitView IsPaneOpen="{Binding IsPaneOpen}"
-               OpenPaneLength="200"
+               OpenPaneLength="120"
                CompactPaneLength="50"
                DisplayMode="CompactInline"
-               Background="#1e1e1e">
+               Background="#000">
         
         <!-- This is the menu. -->
         <SplitView.Pane>
-            <StackPanel Spacing="10"
-                        Margin="5">
-                <Button Command="{Binding HideOpenMenuCommand}"
-                        Background="#1f1f1f">
-                    <PathIcon Data="{Binding CurrentPaneIcon}"></PathIcon>
-                </Button>
+            <Border  Background="#000">
+                <StackPanel Spacing="10"
+                            Margin="5"
+                            Background="#000">
+                    <Button Command="{Binding HideOpenMenuCommand}">
+                        <PathIcon Data="{Binding CurrentPaneIcon}"></PathIcon>
+                    </Button>
                 
-                <!-- Structure for the list of items in the menu. It gets the items from the ListItemTemplate-->
-                <ListBox ItemsSource="{Binding Items}"
-                         SelectedItem="{Binding SelectedListItem}"
-                        Background="#1f1f1f"
-                         Foreground="White">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate DataType="{x:Type vm:ListItemTemplate}">
-                            <StackPanel Spacing="15" Orientation="Horizontal">
-                                <PathIcon Data="{Binding ListItemIcon}"/>
-                                <TextBlock Text="{Binding Label}" />
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
-                
-            </StackPanel>
+                    <!-- Structure for the list of items in the menu. It gets the items from the ListItemTemplate-->
+                    <ListBox ItemsSource="{Binding Items}"
+                             SelectedItem="{Binding SelectedListItem}"
+                             Background="#000"
+                             Foreground="White">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate DataType="{x:Type vm:ListItemTemplate}">
+                                <StackPanel Spacing="15" Orientation="Horizontal">
+                                    <PathIcon Data="{Binding ListItemIcon}"/>
+                                    <TextBlock Text="{Binding Label}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </StackPanel>
+            </Border>
+
         </SplitView.Pane>
         
         
         <!-- This is the main window that changes -->
         <SplitView.Content>
-            <Border CornerRadius="12 0 0 0"
-                    Background="#1d1d1d">
+            <Border Background="#000">
                 <TransitioningContentControl Content="{Binding CurrentPage}" />
             </Border>
         </SplitView.Content>
