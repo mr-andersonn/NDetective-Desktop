@@ -1,19 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "UTMyk2V3scI=",
+  "dgSpecHash": "v3j4BlPzw5s=",
   "success": true,
   "projectFilePath": "C:\\Users\\anton\\Documents\\Workspaces\\GitHubDesktop\\NDetective\\NDetective.Tests\\NDetective.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\anton\\.nuget\\packages\\avalonia\\11.3.0\\avalonia.11.3.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.22045.20230930\\avalonia.angle.windows.natives.2.1.22045.20230930.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\avalonia.buildservices\\0.0.31\\avalonia.buildservices.0.0.31.nupkg.sha512",
+    "C:\\Users\\anton\\.nuget\\packages\\avalonia.controls.colorpicker\\11.3.0\\avalonia.controls.colorpicker.11.3.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\avalonia.desktop\\11.3.0\\avalonia.desktop.11.3.0.nupkg.sha512",
+    "C:\\Users\\anton\\.nuget\\packages\\avalonia.diagnostics\\11.3.0\\avalonia.diagnostics.11.3.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\avalonia.fonts.inter\\11.3.0\\avalonia.fonts.inter.11.3.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\avalonia.freedesktop\\11.3.0\\avalonia.freedesktop.11.3.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\avalonia.native\\11.3.0\\avalonia.native.11.3.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\avalonia.remote.protocol\\11.3.0\\avalonia.remote.protocol.11.3.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\avalonia.skia\\11.3.0\\avalonia.skia.11.3.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\avalonia.themes.fluent\\11.3.0\\avalonia.themes.fluent.11.3.0.nupkg.sha512",
+    "C:\\Users\\anton\\.nuget\\packages\\avalonia.themes.simple\\11.3.0\\avalonia.themes.simple.11.3.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\avalonia.win32\\11.3.0\\avalonia.win32.11.3.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\avalonia.x11\\11.3.0\\avalonia.x11.11.3.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
@@ -27,7 +30,6 @@
     "C:\\Users\\anton\\.nuget\\packages\\microsoft.codecoverage\\17.12.0\\microsoft.codecoverage.17.12.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\microsoft.data.sqlite\\11.0.0-preview.1.26104.118\\microsoft.data.sqlite.11.0.0-preview.1.26104.118.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\microsoft.data.sqlite.core\\11.0.0-preview.1.26104.118\\microsoft.data.sqlite.core.11.0.0-preview.1.26104.118.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.net.illink.tasks\\9.0.5\\microsoft.net.illink.tasks.9.0.5.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\microsoft.net.test.sdk\\17.12.0\\microsoft.net.test.sdk.17.12.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.12.0\\microsoft.testplatform.objectmodel.17.12.0.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\microsoft.testplatform.testhost\\17.12.0\\microsoft.testplatform.testhost.17.12.0.nupkg.sha512",
@@ -53,10 +55,7 @@
     "C:\\Users\\anton\\.nuget\\packages\\xunit.core\\2.9.2\\xunit.core.2.9.2.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\xunit.extensibility.core\\2.9.2\\xunit.extensibility.core.2.9.2.nupkg.sha512",
     "C:\\Users\\anton\\.nuget\\packages\\xunit.extensibility.execution\\2.9.2\\xunit.extensibility.execution.2.9.2.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.2\\xunit.runner.visualstudio.2.8.2.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\9.0.5\\microsoft.netcore.app.runtime.win-x64.9.0.5.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\9.0.5\\microsoft.windowsdesktop.app.runtime.win-x64.9.0.5.nupkg.sha512",
-    "C:\\Users\\anton\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\9.0.5\\microsoft.aspnetcore.app.runtime.win-x64.9.0.5.nupkg.sha512"
+    "C:\\Users\\anton\\.nuget\\packages\\xunit.runner.visualstudio\\2.8.2\\xunit.runner.visualstudio.2.8.2.nupkg.sha512"
   ],
   "logs": []
 }
