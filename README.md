@@ -63,5 +63,6 @@ Without single-file publishing the output directory will contain many DLL files.
 
 This app is a side project of mine that is being improved all the time and while I use it on my home server 24/7 and the functionality is OK, the UI is very far from being perfect. 
 <br>
+<br>
 The app sends ping to all the IPs on the local subnet. If the invader sets up his firewall to block ping, the app will not be able to identify it. I am currently working on other, more effective ways to scan;
 
