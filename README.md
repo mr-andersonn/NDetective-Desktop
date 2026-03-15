@@ -1,42 +1,59 @@
 # NDetect
 
-<br>
-Have you ever thought to yourself, "Is someone connected to my network and  spying on me right now?". You open your terminal in cold sweat, type in nmap ... Nothing... Well that was close. Maybe next time you will catch an unauthorized device. 
+Have you ever wondered:
 
-But what if instead of scanning the network manually, you could just open an app that does it for you with the chosen frequency, save all the devices it finds and notify you about all of the Unauthorized devices?
+*"Is someone connected to my network and spying on me right now?"*
 
-**NDetec**(Network Detective) is a project that I built to solve this exact problem. 
+You open the terminal in mild panic, run `nmap`, and… nothing.
 
-It is a cross-platform network scanner built with [Avalonia UI](https://avaloniaui.net/). 
-It it very lightweight and has all the necessary functionality to scan your network every **n** seconds, manage all the identified devices with CRUD operations connected to user-friendly UI.
+Crisis avoided. For now.
 
-Stays hidden on **Minimized** so it doesn't trigger your OCD.
-Open by clicking on the tray icon.
+But what if you didn’t have to manually scan your network every time you got suspicious?
 
-<br><br>
+What if an app continuously monitored your LAN, recorded every device it sees, and alerted you when something unfamiliar appears?
+
+**NDetect (Network Detective)** is a lightweight cross-platform network scanner built with **Avalonia UI**.
+It periodically scans your local network, tracks discovered devices, and notifies you about unknown or unauthorized connections.
+
+When minimized, the app stays hidden in the **system tray**, quietly watching your network.
+
+---
 
 ## 📸 Features
 
-🌐 **ARP-based LAN scanning**: The app runs a loop that performs an arp scan every n seconds (10 by default). Every iteration displays a list of detected devices that you can choose to save to the apps sqlite database. 
+🌐 **ARP-based LAN scanning**
+Continuously scans your local network using ARP to detect active devices. By default the scan runs every **10 seconds**.
 
-💾 **Scan history tracking** All the devices are stored in the local SQLite database. In **Devices** window you can manage all the devices, edit them, delete or add new manually.   
+💾 **Device history & management**
+Detected devices can be saved to a local **SQLite database**.
+In the **Devices** window you can add, edit, or remove known devices.
 
-✅ Cross-platform: works on **Linux**, **Windows**, and **macOS**
+🔔 **Unauthorized device detection**
+Devices that are not in your saved list can be flagged so you immediately know when something unexpected joins your network.
 
-<br><br>
+🖥 **Cross-platform**
+Runs on **Windows**, **Linux**, and **macOS** thanks to Avalonia UI.
+
+---
 
 ## 🛠 Requirements
 
-- [.NET 7.0 or later](https://dotnet.microsoft.com/download)
-- Basic knowledge in networking. The app gives you MAC and IP of every detected device. You will have to manually find out which device in your house is being detected by the scanner. Check: Phones, Tablets, Laptops, PCs etc.
-- If you don't know how to do it --> Use Google or ask ChatGPT;
+* [.NET 7.0 or later](https://dotnet.microsoft.com/download)
 
-<br><br>
+Basic networking awareness is recommended. The scanner reports **IP** and **MAC addresses**, so you may need to manually identify which device corresponds to which hardware on your network (phones, laptops, smart TVs, etc.).
 
-## 📦 Build & Run 
+---
 
-Currently there is no executable but the project can be opened with Rider / VS and run from there.
+## 📦 Build & Run
 
-The app, however, is ready for publishing so just google "How to publish in Rider/VisualStudio". When publishing --> Coose "Produce single file". Otherwise you will get 100+ dlls in your output dir.
+Currently there is no prebuilt executable.
 
+Clone the repository and run the project using **Rider** or **Visual Studio**.
 
+To publish a single-file executable:
+
+```
+dotnet publish -c Release /p:PublishSingleFile=true
+```
+
+Without single-file publishing the output directory will contain many DLL files.
