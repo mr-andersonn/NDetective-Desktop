@@ -17,7 +17,7 @@ It periodically scans your local network, tracks discovered devices, and notifie
 
 When minimized, the app stays hidden in the **system tray**, quietly watching your network.
 
----
+<br>
 
 ## 📸 Features
 
@@ -34,7 +34,7 @@ Devices that are not in your saved list can be flagged so you immediately know w
 🖥 **Cross-platform**
 Runs on **Windows**, **Linux**, and **macOS** thanks to Avalonia UI.
 
----
+<br>
 
 ## 🛠 Requirements
 
@@ -42,7 +42,7 @@ Runs on **Windows**, **Linux**, and **macOS** thanks to Avalonia UI.
 
 Basic networking awareness is recommended. The scanner reports **IP** and **MAC addresses**, so you may need to manually identify which device corresponds to which hardware on your network (phones, laptops, smart TVs, etc.).
 
----
+<br>
 
 ## 📦 Build & Run
 
