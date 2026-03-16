@@ -4,7 +4,7 @@ Have you ever wondered:
 
 *"Is someone connected to my network and spying on me right now?"*
 
-You open the terminal in mild panic, run `nmap`, and… nothing.
+You open the terminal in panic, run `nmap`, and… nothing.
 
 Crisis avoided. For now.
 
@@ -12,7 +12,7 @@ But what if you didn’t have to manually scan your network every time you got s
 
 What if an app continuously monitored your LAN, recorded every device it sees, and alerted you when something unfamiliar appears?
 
-**NDetect (Network Detective)** is a lightweight cross-platform network scanner built with **Avalonia UI**.
+**NDetect (Network Detective)** is a lightweight cross-platform network scanner built with .NET **Avalonia UI**.
 It periodically scans your local network, tracks discovered devices, and notifies you about unknown or unauthorized connections.
 
 When minimized, the app stays hidden in the **system tray**, quietly watching your network.
@@ -56,14 +56,5 @@ To publish a single-file executable:
 dotnet publish -c Release /p:PublishSingleFile=true
 ```
 
-Without single-file publishing the output directory will contain many DLL files.
-
-<br>
-
-## Important notes from the developer
-
-This app is a side project of mine that is being improved all the time and while I use it on my home server 24/7 and the functionality is OK, the UI is very far from being perfect. 
-<br>
-<br>
-The app uses ARP scanning for all the IPs on the local subnet. If the invader sets up his firewall to block it, the app will not be able to identify it. I am currently working on other, more effective ways to scan;
+Without single-file publishing the output directory will contain many DLL files
 
