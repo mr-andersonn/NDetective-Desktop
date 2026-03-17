@@ -69,82 +69,59 @@
         <!-- SIDEBAR -->
 
         <SplitView.Pane>
-
             <Border Background="#151515">
-
                 <Grid RowDefinitions="Auto,*" Margin="10">
-
                     <!-- HEADER -->
 
                     <StackPanel Orientation="Horizontal"
                                 Spacing="10"
                                 Margin="0,0,0,15">
-
                         <Button Command="{Binding HideOpenMenuCommand}"
                                 Width="32"
                                 Height="32"
                                 Padding="0">
                             <PathIcon Data="{Binding CurrentPaneIcon}" Width="16"/>
                         </Button>
-
                         <TextBlock Text="NDetective"
                                    FontWeight="Bold"
                                    VerticalAlignment="Center"
                                    IsVisible="{Binding IsPaneOpen}"/>
-
                     </StackPanel>
-
 
                     <!-- NAVIGATION -->
 
                     <ListBox Grid.Row="1"
                              ItemsSource="{Binding Items}"
                              SelectedItem="{Binding SelectedListItem}">
-
                         <ListBox.ItemTemplate>
-
                             <DataTemplate DataType="{x:Type vm:ListItemTemplate}">
-
                                 <Grid ColumnDefinitions="24,*"
                                       ColumnSpacing="10">
-
                                     <PathIcon Grid.Column="0"
                                               Data="{Binding ListItemIcon}"
                                               Width="18"
                                               Height="18"/>
-
                                     <TextBlock Grid.Column="1"
                                                Text="{Binding Label}"
                                                VerticalAlignment="Center"/>
-
                                 </Grid>
-
                             </DataTemplate>
-
                         </ListBox.ItemTemplate>
-
                     </ListBox>
-
                 </Grid>
-
             </Border>
-
         </SplitView.Pane>
 
 
         <!-- MAIN CONTENT -->
 
         <SplitView.Content>
-
             <Border Background="#1E1E1E"
                     Padding="20">
 
                 <TransitioningContentControl Content="{Binding CurrentPage}"/>
-
             </Border>
-
         </SplitView.Content>
-
     </SplitView>
-
+    
 </Window>
