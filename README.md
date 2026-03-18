@@ -24,9 +24,16 @@ When minimized, the app stays hidden in the **system tray**, quietly watching yo
 🌐 **ARP-based LAN scanning**
 Continuously scans your local network using ARP to detect active devices. By default the scan runs every **10 seconds**.
 
+<img width="793" height="723" alt="ndetectiveSearchPage" src="https://github.com/user-attachments/assets/3ecbb309-f36b-4ab0-95aa-9df1e7c268f7" />
+
 💾 **Device history & management**
 Detected devices can be saved to a local **SQLite database**.
 In the **Devices** window you can add, edit, or remove known devices.
+
+<img width="793" height="723" alt="NDetectiveDevicesPage" src="https://github.com/user-attachments/assets/01d63d59-2084-4e57-9d42-6be2e173167c" />
+
+<img width="791" height="723" alt="NDetectiveEditDevicePage" src="https://github.com/user-attachments/assets/13b4c82b-6f95-4e5e-b3ab-4fd4af0e9f84" />
+
 
 🔔 **Unauthorized device detection**
 Devices that are not in your saved list can be flagged so you immediately know when something unexpected joins your network.
