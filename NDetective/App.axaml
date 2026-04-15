@@ -15,7 +15,7 @@
     
     <TrayIcon.Icons>
         <TrayIcons>
-            <TrayIcon Icon="/Assets/NDetectiveIcon.png"
+            <TrayIcon Icon="/Assets/NDetectiveIcon.ico"
                       ToolTipText="NDetective"
                       Clicked="TrayClicked">
                 <TrayIcon.Menu>
